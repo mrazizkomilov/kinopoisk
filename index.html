@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Кнопоиск</title>
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sketchy/bootstrap.min.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <div class="header">
+            <h1 class="text-center mt-5">КиноПоиск</h1>
+            <form class="js-search-movie-form d-flex" action="http://www.omdbapi.com/" method="GET">
+               <input class="movie-search-input form-control mr-4" type="text" placeholder="Search" required>
+               <button class="Search-btn btn btn-primary" type="submit">Поиск</button>
+            </form>
+         </div>
+
+
+         <div class="rezults container-fluid bg-secondary mt-5 p-5 text-white">
+              <h3 class="text-center">Qiduruv natijalari  <span class="search-word  d-none d-sm-block  bg-primary d-md-block mt-2 p-2"></span></h3>
+            
+              <ul class="rezults__list d-flex flex-wrap justify-content-center ">
+                
+              </ul>
+         </div>
+         <div class="paginations mt-5 text-center">
+
+         </div>
+      </div>
+    
+   </div>
+   
+
+   <div  id="Mymodal" class="modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center ">
+             <img class="modal-img mb-3" src="" alt="">
+             <h5 class="text-success">ImdbRating  <span class="imdbRating"></span></h5>
+             <h5 class="text-success">Genre: <span class="Genre"></span></h5>
+             <h5>В ролях: <span class="movie-actor"></span></h5>
+            <p class="modal-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+   <script src="js/jquare.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
